@@ -14,7 +14,7 @@ class Statistics {
         Hashtable ht = new Hashtable();
         for(int i = 0; i < 10000; i++) {
 // Produce a number between 0 and 20:
-            Integer r = Integer.valueOf((int)(Math.random() * 20));
+            Integer r = new Integer((int)(Math.random() * 20));
             if(ht.containsKey(r))
                 ((Counter)ht.get(r)).i++;
             else
